@@ -9,7 +9,7 @@
 *pointer to array if everything is normal,
 */
 
-char "create _array (unsigned int size, char c)
+char *create _array (unsigned int size, char c)
 {
 	char *array;
 	unsigned int index;
@@ -18,7 +18,6 @@ char "create _array (unsigned int size, char c)
 		return (NULL):
 	array = malloc(sizeof(char) * size):
 
-	
 	if (array == NULL)
 		return (NULL);
 
