@@ -2,9 +2,9 @@
 
 /**.
 *_strdup - returns a pointer to a newly allocated
-*space in senory, which contains a copy of the
+*space in memory, which contains a copy of the
 *@string given as a parameter.
-*estristring to be copted
+*@str:string to be copied
 *
 *Return: NULL in case of error, pointer to allocated
 *space
@@ -20,16 +20,16 @@ char *_strdup(char *str)
 
 	for (index = 0; str[index); index++)
 		len++;
-	cpy = malloc(sizeof (char) * (len + 1));
+	cpy = malloc(sizeof(char) * (len + 1));
 
 	if (cpy == NULL)
 		return (NULL);
 
 	for (index = 0; str[index]; index++) 
 	{
-	cpy [index) a str[index];
+		cpy [index] = str[index];
 	}
-	cpy[len] = *\0';
+	cpy[len] = '\0';
 
 	 return (cpy);
 }
