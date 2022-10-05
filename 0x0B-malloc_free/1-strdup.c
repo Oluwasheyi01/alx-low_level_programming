@@ -1,10 +1,10 @@
 #include "main.h"
 
-/**.
-*_strdup - returns a pointer to a newly allocated
+/**
+* _strdup - returns a pointer to a newly allocated
 *space in memory, which contains a copy of the
-*@string given as a parameter.
-*@str:string to be copied
+*string given as a parameter.
+*@str:String to be copied
 *
 *Return: NULL in case of error, pointer to allocated
 *space
@@ -15,7 +15,7 @@ char *_strdup(char *str)
 	char *cpy;
 	int index, len;
 
-	1f (str == NULL)
+	if (str == NULL)
 		return (NULL);
 
 	for (index = 0; str[index]; index++)
@@ -25,12 +25,13 @@ char *_strdup(char *str)
 	if (cpy == NULL)
 		return (NULL);
 
-	for (index = 0; str[index]; index++) 
+	for (index = 0; str[index]; index++)
 	{
-		cpy [index] = str[index];
+		cpy[index] = str[index];
 	}
 
 	cpy[len] = '\0';
 
-	 return (cpy);
+	return (cpy);
+
 }
